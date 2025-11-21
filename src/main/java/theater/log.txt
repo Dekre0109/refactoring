@@ -1,4 +1,11 @@
-﻿95a1ad1 Task 2.4
+﻿ad6ab64 Task 2.4
+95d8d02 Task 2.3
+86e6cfe Task 2.2
+688fd93 Task 2.1
+d1d2772 Task 1.2
+bfb6f55 Task 1.1
+a40da2f Update log for Task commits
+95a1ad1 Task 2.4
 0969306 Task 2.3
 b5671cf Task 2.2
 37c56a7 Task 2.1
