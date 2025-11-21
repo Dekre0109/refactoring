@@ -1,4 +1,5 @@
-﻿ee696a2 Update log after Task 2.4
+﻿8a36c9f Ensure log.txt UTF-8 encoding
+ee696a2 Update log after Task 2.4
 ad6ab64 Task 2.4
 95d8d02 Task 2.3
 86e6cfe Task 2.2
