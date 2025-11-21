@@ -34,7 +34,7 @@ public class StatementPrinter {
 
         // build a line for each performance
         for (Performance performance : invoice.getPerformances()) {
-            Play play = getPlay(performance);
+            final Play play = getPlay(performance);
             result.append(String.format(
                     "  %s: %s (%s seats)%n",
                     play.getName(),
@@ -63,10 +63,11 @@ public class StatementPrinter {
      *
      * @param performance the performance
      * @return the amount in cents
+     * @throws RuntimeException if the play type is unknown
      */
     private int getAmount(Performance performance) {
         int result;
-        Play play = getPlay(performance);
+        final Play play = getPlay(performance);
 
         switch (play.getType()) {
             case "tragedy":
@@ -118,7 +119,7 @@ public class StatementPrinter {
      * @return the formatted currency string
      */
     private String usd(int amount) {
-        NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.US);
+        final NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.US);
         return formatter.format(amount / Constants.PERCENT_FACTOR);
     }
 
